@@ -48,11 +48,12 @@ METRO_ZIP                 = os.path.join(CACHE_DIR, "metroZip.zip")
 METRO_DIR                 = os.path.join(CACHE_DIR, "metro-for-steam-%s" % SKIN_VERSION)
 METRO_COLORS_FILE         = os.path.join(METRO_DIR, "custom.styles")
 
-METRO_PATCH_URL  = "https://github.com/redsigma/UPMetroSkin/archive/9.1.12.zip" # A link to the version we've tested rather than the latest, just in case they break things upstream.
+METRO_PATCH_VER  = "9.1.34" # A version we've tested rather than the latest, just in case they break things upstream.
+METRO_PATCH_URL  = "https://github.com/redsigma/UPMetroSkin/archive/%s.zip" % METRO_PATCH_VER
 METRO_PATCH_ZIP  = os.path.join(CACHE_DIR, "metroPatchZip.zip")
 METRO_PATCH_DIR  = os.path.join(CACHE_DIR, "metroPatchZip")
-METRO_PATCH_COPY = os.path.join(METRO_PATCH_DIR, "UPMetroSkin-9.1.12", "Unofficial 4.x Patch", "Main Files [Install First]")
-METRO_PATCH_HDPI = os.path.join(METRO_PATCH_DIR, "UPMetroSkin-9.1.12", "Unofficial 4.x Patch", "Extras", "High DPI", "Increased fonts", "Install")
+METRO_PATCH_COPY = os.path.join(METRO_PATCH_DIR, "UPMetroSkin-%s" % METRO_PATCH_VER, "Unofficial 4.x Patch", "Main Files [Install First]")
+METRO_PATCH_HDPI = os.path.join(METRO_PATCH_DIR, "UPMetroSkin-%s" % METRO_PATCH_VER, "Unofficial 4.x Patch", "Extras", "High DPI", "Increased fonts", "Install")
 MAX_PATCH_DL_ATTEMPTS = 5
 
 # CLI colour and style sequences
